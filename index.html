@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN Hijab - Koleksi Hijab Elegan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Mr+Dafoe&display=swap" rel="stylesheet">
+  
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script 
+        type="text/javascript"
+        src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="Mid-client-l9fCw2vrZLJXL9Rx">
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">NN<span> Hijab</span></a>
+
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#products">Produk</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+
+    <div class="search-form">
+        <input type="search" id="search-input" placeholder="Cari produk di sini...">
+        <label for="search-input"><i data-feather="search"></i></label>
+    </div>
+
+    <div class="shopping-cart">
+        <div class="cart-items-container"></div>
+        
+        <div class="cart-total">
+            <h4>Total: <span id="total-price-display">IDR 0</span></h4>
+            <button id="cart-checkout-btn" class="cta" style="width: 100%; border-radius: 0.5rem; border: none; cursor: pointer; padding: 1rem; margin-top: 1.5rem; font-weight: bold; background-color: #b0b431; color: #fff; transition: 0.3s;">Checkout Keranjang</button>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Selamat Datang di Website</h1>
+            <h2><span>NN</span> Hijab</h2>
+            <p>Temukan koleksi hijab terbaru dan stylish untuk penampilan yang anggun dan modis.</p>
+            <a href="#products" class="cta">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section id="about" class="about fade-in-slow">
+        <h2><span>Tentang</span> Kami</h2>
+        <div class="row">
+            <div class="about-img">
+                <img src="img/tentang-kami.png" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <h3>Kualitas dan Elegansi dalam Busana</h3>
+                <p>NN Hijab adalah brand fashion muslimah yang berkomitmen untuk memberikan kualitas terbaik di setiap jahitan. Kami memahami bahwa kenyamanan adalah kunci utama dalam berpakaian, terutama bagi Anda yang aktif sepanjang hari.</p>
+                <p>With berbagai pilihan warna dan motif yang up-to-date, koleksi kami dirancang untuk mendukung penampilan Anda agar tetap stylish, profesional, dan menawan tanpa meninggalkan nilai-nilai kesantunan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products fade-in-slow">
+        <h2><span>Produk</span> Kami</h2>
+        
+        <div class="products-categories">
+            <button class="category-btn active" data-filter="all">Semua</button>
+            <button class="category-btn" data-filter="jilbab">Jilbab</button>
+            <button class="category-btn" data-filter="kameja">Kameja</button>
+            <button class="category-btn" data-filter="gamis">Gamis</button>
+            <button class="category-btn" data-filter="rok">Rok</button>
+        </div>
+        
+        <div class="row">
+            <button id="prev-slide-btn" class="slider-arrow-btn"><i data-feather="chevron-left"></i></button>
+
+            <div class="products-slider-container">
+                <!-- Produk ditarik otomatis dari database MySQL via script.js -->
+            </div> 
+            <button id="next-slide-btn" class="slider-arrow-btn"><i data-feather="chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in-slow">
+        <h2><span>Konfirmasi</span> Pembayaran</h2>
+        <p class="contact-desc">Sudah transfer atau membayar via Midtrans? Isi form di bawah ini untuk konfirmasi instan ke WhatsApp admin.</p>
+        
+        <div class="row">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.649371263001!2d122.34872778219557!3d0.5272790528009447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3279aba5de32dfd9%3A0x16ad6b2cfb469f6e!2sNN%20Hijab%20Tilamuta!5e0!3m2!1sid!2sid!4v1779643447789!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="">
+                <div class="input-grup">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Nama Pembeli" required>
+                </div>
+                <div class="input-grup">
+                    <i data-feather="mail"></i> 
+                    <input type="email" placeholder="Email Anda">
+                </div>
+                <div class="input-grup">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="No HP / WhatsApp" required>
+                </div>
+                <div class="input-grup">
+                    <i data-feather="map-pin"></i>
+                    <input type="text" placeholder="Alamat Anda">
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        feather.replace();
+    </script> 
+    <script src="js/script.js"></script>
+</body>
+</html>
